@@ -42,7 +42,7 @@ export default function FormattedDate(props) {
   return (
     <div className="date">
       <div className="time mt-2">
-        Last Updated at: {hours}:{minutes}
+        最終更新日: {hours}:{minutes}
       </div>
       <div>
         今日は {day}, {month} {date}日, {year}
