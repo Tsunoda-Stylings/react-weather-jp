@@ -1,38 +1,49 @@
-.App {
+body {
+  font-family: "Architects Daughter", cursive;
+  background: radial-gradient(
+    circle at 7.4% 45.1%,
+    rgb(236, 206, 251) 0%,
+    rgb(205, 237, 246) 45.1%,
+    rgb(227, 251, 252) 78.4%,
+    rgb(230, 247, 235) 90%
+  );
+  border: 10px solid lightblue;
+  max-width: 900px;
+  max-height: 700px;
+  margin: 20px auto;
+  padding: 20px;
+}
+.search {
+  font-size: 30px;
+}
+.btn-primary {
+  font-size: 30px;
+  background-color: #cab8ff !important;
+}
+
+.info {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App footer {
+  text-align: center;
+  font-size: 12px;
+  margin: 10px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.App a {
+  text-decoration: none;
+  color: #9c19e0;
+}
+@media (max-width: 820px) {
+  .search {
+    font-size: 20px;
+  }
+  body {
+    max-height: 100%;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width: 650px) {
+  .search {
+    font-size: 15px;
   }
 }
